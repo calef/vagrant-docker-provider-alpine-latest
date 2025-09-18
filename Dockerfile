@@ -2,7 +2,7 @@ FROM alpine:latest
 LABEL MAINTAINER="Chris Alef <chris@crickertech.com>"
 
 # Install essential packages
-RUN apk add --no-cache openssh sudo bash shadow curl \
+RUN apk add --no-cache openssh sudo bash shadow curl git \
     # Create vagrant group and user
     && addgroup -S vagrant \
     && adduser -D -s /bin/bash -G vagrant vagrant \
